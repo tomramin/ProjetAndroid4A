@@ -4,10 +4,13 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="250dp"
-    android:layout_marginTop="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
     android:padding="8dp"
-    android:background="@drawable/bgg"
-    android:id="@+id/container">
+    android:background="@color/blanc"
+    android:id="@+id/container"
+    android:layout_marginBottom="15dp">
 
 
     <ImageView
@@ -30,7 +33,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="60dp"
             android:text="Id"
-            android:textColor="@color/blanc"
+            android:textColor="@color/grisFoncé"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -41,7 +44,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
             android:text="Classe"
-            android:textColor="@color/blanc"
+            android:textColor="@color/grisFoncé"
             android:textSize="30sp"
             android:textStyle="bold"/>
 
