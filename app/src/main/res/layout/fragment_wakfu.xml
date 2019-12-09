@@ -142,7 +142,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@+id/p_gender"
-                    android:text="NAME:"
+                    android:text="Nom:"
                     android:textColor="@color/blanc"
                     android:textStyle="bold"
                     android:textSize="18sp"
