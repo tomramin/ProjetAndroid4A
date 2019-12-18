@@ -7,14 +7,24 @@
     tools:context=".Controller.MainActivity"
     android:background="@color/grisFoncé">
 
-
-        <ImageView
+        <include
+            layout = "@layout/toolbar"
+            android:id="@+id/toolbar"></include>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/dofus_logo"
-         />
+            >
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/dofus_logo"
+                />
+
+        </RelativeLayout>
 
         <android.support.v7.widget.RecyclerView
             android:paddingTop="5dp"
