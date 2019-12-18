@@ -42,7 +42,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
 
         // Request option for Glide
         option = new RequestOptions().centerCrop().placeholder(R.drawable.loading_shape).error(R.drawable.loading_shape);
-
     }
 
     @Override
@@ -81,12 +80,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
     public void onBindViewHolder(MyViewHolder holder, int position) {
 
         holder.tv_classe.setText(mData.get(position).getClasse());
-        holder.tv_rating.setText(mData.get(position).getId());
+        holder.tv_id.setText(mData.get(position).getId());
 
         // Load Image from the internet and set it into Imageview using Glide
 
         Glide.with(mContext).load(mData.get(position).getImage()).apply(option).into(holder.img_thumbnail);
-
+        Glide.with(mContext).load(mData.get(position).getIcone()).apply(option).into(holder.img_icone);
     }
 
     @Override
@@ -97,8 +96,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView tv_classe ;
-        TextView tv_rating ;
+        TextView tv_id ;
         ImageView img_thumbnail;
+        ImageView img_icone;
         LinearLayout view_container;
 
 
@@ -107,8 +107,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
 
             view_container = itemView.findViewById(R.id.container);
             tv_classe = itemView.findViewById(R.id.p_classe);
-            tv_rating = itemView.findViewById(R.id.p_id);
+            tv_id = itemView.findViewById(R.id.p_id);
             img_thumbnail = itemView.findViewById(R.id.p_image_wakfu);
+            img_icone = itemView.findViewById(R.id.p_icone);
 
         }
     }

@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="20dp"
             android:text="Id"
             android:textColor="@color/grisFoncé"
             android:textSize="30sp"
@@ -47,6 +47,14 @@
             android:textColor="@color/grisFoncé"
             android:textSize="30sp"
             android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/p_icone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/loading_shape"/>
 
 
     </LinearLayout>
