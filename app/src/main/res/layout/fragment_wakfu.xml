@@ -53,10 +53,10 @@
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="1000dp"
+        android:layout_height="match_parent"
+        android:background="@color/blanc"
         android:padding="16dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:background="@color/blanc">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -74,122 +74,125 @@
                     android:background="@color/vert">
 
                     <TextView
-                        android:layout_marginTop="5dp"
-                        android:layout_marginLeft="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
                         android:text="Informations:"
                         android:textColor="@color/blanc"
-                        android:textStyle="bold"
-                        android:layout_marginBottom="5dp"/>
+                        android:textStyle="bold" />
                 </RelativeLayout>
 
                 <TextView
-                    android:layout_marginLeft="5dp"
-                    android:paddingTop="55dp"
                     android:id="@+id/id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-5dp"
+                    android:paddingTop="55dp"
                     android:text="ID:"
-                    android:textStyle="bold"
-
                     android:textColor="@color/blanc"
-                    android:textSize="18sp"/>
+
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:paddingTop="55dp"
-                    android:layout_marginLeft="5dp"
                     android:id="@+id/p_id"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-5dp"
                     android:layout_toRightOf="@+id/id"
+                    android:paddingTop="55dp"
                     android:text="Id"
                     android:textColor="@color/blanc"
                     android:textSize="18sp" />
 
-                <TextView
-                    android:paddingTop="90dp"
-                    android:layout_marginLeft="5dp"
-                    android:id="@+id/genre"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="Genre:"
-                    android:textColor="@color/blanc"
-                    android:textStyle="bold"
-                    android:textSize="18sp"/>
 
                 <TextView
-                    android:paddingTop="85dp"
-                    android:layout_marginLeft="5dp"
-                    android:id="@+id/p_gender"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_centerVertical="true"
-                    android:layout_toRightOf="@+id/genre"
-                    android:textColor="@color/blanc"
-                    android:text="Genre"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:paddingTop="85dp"
-                    android:layout_marginLeft="10dp"
-                    android:id="@+id/name"
-                    android:paddingLeft="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_centerVertical="true"
-                    android:layout_toRightOf="@+id/p_gender"
-                    android:text="Nom:"
-                    android:textColor="@color/blanc"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
-                    />
-
-                <TextView
-                    android:paddingTop="85dp"
-                    android:layout_marginLeft="5dp"
-                    android:id="@+id/p_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_centerVertical="true"
-                    android:textColor="@color/blanc"
-                    android:layout_toRightOf="@+id/name"
-                    android:text="Name"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:paddingTop="85dp"
-                    android:layout_marginLeft="10dp"
                     android:id="@+id/classe"
-                    android:paddingLeft="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_centerVertical="true"
-                    android:textColor="@color/blanc"
-                    android:layout_toRightOf="@+id/p_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_toRightOf="@+id/p_id"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="55dp"
                     android:text="Classe:"
-                    android:textStyle="bold"
+                    android:textColor="@color/blanc"
                     android:textSize="18sp"
-                    />
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:paddingTop="85dp"
-                    android:layout_marginLeft="5dp"
                     android:id="@+id/p_classe"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_centerVertical="true"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_toRightOf="@+id/classe"
-                    android:textColor="@color/blanc"
+                    android:paddingTop="55dp"
                     android:text="Classe"
+                    android:textColor="@color/blanc"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="85dp"
+                    android:text="Nom:"
+                    android:textColor="@color/blanc"
                     android:textSize="18sp"
+                    android:textStyle="bold"
                     android:layout_marginBottom="10dp"/>
+
+
+
+                <TextView
+                    android:id="@+id/p_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/name"
+                    android:paddingTop="85dp"
+                    android:text="Name"
+                    android:textColor="@color/blanc"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/p_name"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="85dp"
+                    android:text="Genre:"
+                    android:textColor="@color/blanc"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/p_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/genre"
+                    android:paddingTop="85dp"
+                    android:text="Gender"
+                    android:textColor="@color/blanc"
+                    android:textSize="18sp" />
 
             </RelativeLayout>
 
@@ -202,32 +205,31 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
+                    android:layout_height="match_parent">
 
                     <TextView
-                        android:paddingTop="5dp"
                         android:id="@+id/sorts"
-                        android:paddingLeft="5dp"
-                        android:layout_height="match_parent"
                         android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/vert"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
                         android:text="Sorts:"
                         android:textColor="@color/blanc"
-                        android:textStyle="bold"
-                        android:background="@color/vert"
-                        android:paddingBottom="5dp"></TextView>
+                        android:textStyle="bold"></TextView>
 
                 </RelativeLayout>
 
                 <TextView
-                    android:layout_marginTop="35dp"
                     android:id="@+id/p_sorts"
-                    android:paddingLeft="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="5dp"
                     android:text="Sorts"
-                    android:textColor="@color/blanc"
-                    android:layout_marginBottom="10dp"/>
+                    android:textColor="@color/blanc" />
             </RelativeLayout>
 
 
@@ -248,10 +250,10 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
                         android:text="Description:"
                         android:textColor="@color/blanc"
-                        android:textStyle="bold"
-                        android:layout_marginBottom="5dp"/>
+                        android:textStyle="bold" />
 
                 </RelativeLayout>
 

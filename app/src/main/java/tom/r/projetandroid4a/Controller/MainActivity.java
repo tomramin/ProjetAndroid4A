@@ -4,6 +4,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.inputmethod.EditorInfo;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -30,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private RequestQueue requestQueue ;
     private List<Personnage> listePersonnages ;
     private RecyclerView recyclerView ;
+    private MyAdapter myAdapter;
 
 
     @Override
@@ -88,9 +94,33 @@ public class MainActivity extends AppCompatActivity {
 
     private void setuprecyclerview(List<Personnage> lstpersonnage) {
 
-        MyAdapter myadapter = new MyAdapter(this,lstpersonnage) ;
+        myAdapter = new MyAdapter(this,lstpersonnage) ;
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(myadapter);
+        recyclerView.setAdapter(myAdapter);
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.personnage_menu, menu);
+        MenuItem searchPerso = menu.findItem(R.id.action_search);
+        SearchView searchView = (SearchView) searchPerso.getActionView();
+        searchView.setImeOptions(EditorInfo.IME_ACTION_DONE);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                myAdapter.getFilter().filter(s);
+
+                return false;
+            }
+        });
+
+        return true;
     }
 }
