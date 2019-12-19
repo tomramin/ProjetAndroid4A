@@ -51,6 +51,7 @@ public class FragmentDofus extends Fragment {
         TextView pSorts = view.findViewById(R.id.p_sorts);
         ImageView pImage = view.findViewById(R.id.p_image_dofus);
         TextView pLien = view.findViewById(R.id.p_lien_dofus);
+        ImageView pIcone = view.findViewById(R.id.p_icone);
 
 
         // Setting values to each view
@@ -63,9 +64,11 @@ public class FragmentDofus extends Fragment {
         pLien.setText(lien_dofus);
 
         RequestOptions requestOptions = new RequestOptions().centerCrop().placeholder(R.drawable.loading_shape).error(R.drawable.loading_shape);
+        RequestOptions requestOptions2 = new RequestOptions().centerCrop().placeholder(R.drawable.bgg).error(R.drawable.bgg);
 
         // Set image using Glide
         Glide.with(this).load(image_dofus).apply(requestOptions).into(pImage);
+        Glide.with(this).load(icone).apply(requestOptions2).into(pIcone);
 
         return view;
     }
