@@ -1,4 +1,4 @@
-package tom.r.projetandroid4a.Fragment;
+package tom.r.projetandroid4a.View;
 
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;

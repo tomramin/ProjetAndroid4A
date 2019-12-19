@@ -5,10 +5,10 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
-import tom.r.projetandroid4a.Fragment.FragmentAdapter;
-import tom.r.projetandroid4a.Fragment.FragmentDofus;
-import tom.r.projetandroid4a.Fragment.FragmentDofusRetro;
-import tom.r.projetandroid4a.Fragment.FragmentWakfu;
+import tom.r.projetandroid4a.View.FragmentAdapter;
+import tom.r.projetandroid4a.Controller.Fragment.FragmentDofus;
+import tom.r.projetandroid4a.Controller.Fragment.FragmentDofusRetro;
+import tom.r.projetandroid4a.Controller.Fragment.FragmentWakfu;
 import tom.r.projetandroid4a.R;
 
 /**
