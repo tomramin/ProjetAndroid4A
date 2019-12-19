@@ -6,7 +6,9 @@ public class Personnage {
     private String name;
     private String gender;
     private String sorts;
-    private String description ;
+    private String description_wakfu;
+    private String description_dofus;
+    private String description_dofus_retro;
     private String icone;
     private String image;
     private String image_wakfu;
@@ -19,13 +21,15 @@ public class Personnage {
     public Personnage() {
     }
 
-    public Personnage(String id, String classe, String name, String gender, String sorts, String description, String icone, String image, String image_wakfu, String image_dofus, String image_dofus_retro, String lien_wakfu, String lien_dofus, String lien_dofus_retro) {
+    public Personnage(String id, String classe, String name, String gender, String sorts, String description_wakfu, String description_dofus, String description_dofus_retro, String icone, String image, String image_wakfu, String image_dofus, String image_dofus_retro, String lien_wakfu, String lien_dofus, String lien_dofus_retro) {
         this.id = id;
         this.classe = classe;
         this.name = name;
         this.gender = gender;
         this.sorts = sorts;
-        this.description = description;
+        this.description_wakfu = description_wakfu;
+        this.description_dofus = description_dofus;
+        this.description_dofus_retro = description_dofus_retro;
         this.icone = icone;
         this.image = image;
         this.image_wakfu = image_wakfu;
@@ -76,12 +80,28 @@ public class Personnage {
         this.sorts = sorts;
     }
 
-    public String getDescription() {
-        return description;
+    public String getDescription_wakfu() {
+        return description_wakfu;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDescription_wakfu(String description_wakfu) {
+        this.description_wakfu = description_wakfu;
+    }
+
+    public String getDescription_dofus() {
+        return description_dofus;
+    }
+
+    public void setDescription_dofus(String description_dofus) {
+        this.description_dofus = description_dofus;
+    }
+
+    public String getDescription_dofus_retro() {
+        return description_dofus_retro;
+    }
+
+    public void setDescription_dofus_retro(String description_dofus_retro) {
+        this.description_dofus_retro = description_dofus_retro;
     }
 
     public String getIcone() {

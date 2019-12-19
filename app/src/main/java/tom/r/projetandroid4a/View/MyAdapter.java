@@ -57,7 +57,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
 
                 Intent i = new Intent(mContext, DetailActivity.class);
                 i.putExtra("p_name",mData.get(viewHolder.getAdapterPosition()).getName());
-                i.putExtra("p_description",mData.get(viewHolder.getAdapterPosition()).getDescription());
+                i.putExtra("p_description_wakfu",mData.get(viewHolder.getAdapterPosition()).getDescription_wakfu());
+                i.putExtra("p_description_dofus",mData.get(viewHolder.getAdapterPosition()).getDescription_dofus());
+                i.putExtra("p_description_dofus_retro",mData.get(viewHolder.getAdapterPosition()).getDescription_dofus_retro());
                 i.putExtra("p_id",mData.get(viewHolder.getAdapterPosition()).getId());
                 i.putExtra("p_image",mData.get(viewHolder.getAdapterPosition()).getImage());
                 i.putExtra("p_classe",mData.get(viewHolder.getAdapterPosition()).getClasse());

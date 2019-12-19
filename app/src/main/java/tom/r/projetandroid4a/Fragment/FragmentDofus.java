@@ -30,7 +30,7 @@ public class FragmentDofus extends Fragment {
         // Recieve data
         String id = getActivity().getIntent().getExtras().getString("p_id");
         String name = getActivity().getIntent().getExtras().getString("p_name");
-        String description = getActivity().getIntent().getExtras().getString("p_description");
+        String description_dofus = getActivity().getIntent().getExtras().getString("p_description_dofus");
         String image = getActivity().getIntent().getExtras().getString("p_image");
         String classe = getActivity().getIntent().getExtras().getString("p_classe");
         String gender = getActivity().getIntent().getExtras().getString("p_gender");
@@ -46,7 +46,7 @@ public class FragmentDofus extends Fragment {
         TextView pId = view.findViewById(R.id.p_id);
         TextView pName = view.findViewById(R.id.p_name);
         TextView pClasse = view.findViewById(R.id.p_classe);
-        TextView pDescription = view.findViewById(R.id.p_description);
+        TextView pDescription_dofus = view.findViewById(R.id.p_description_dofus);
         TextView pGender = view.findViewById(R.id.p_gender);
         TextView pSorts = view.findViewById(R.id.p_sorts);
         ImageView pImage = view.findViewById(R.id.p_image_dofus);
@@ -58,7 +58,7 @@ public class FragmentDofus extends Fragment {
         pName.setText(name);
         pId.setText(id);
         pClasse.setText(classe);
-        pDescription.setText(description);
+        pDescription_dofus.setText(description_dofus);
         pGender.setText(gender);
         pSorts.setText(sorts);
         pLien.setText(lien_dofus);
