@@ -67,6 +67,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
                 i.putExtra("p_image_wakfu",mData.get(viewHolder.getAdapterPosition()).getImage_wakfu());
                 i.putExtra("p_image_dofus",mData.get(viewHolder.getAdapterPosition()).getImage_dofus());
                 i.putExtra("p_image_dofus_retro",mData.get(viewHolder.getAdapterPosition()).getImage_dofus_retro());
+                i.putExtra("p_lien_wakfu",mData.get(viewHolder.getAdapterPosition()).getLien_wakfu());
+                i.putExtra("p_lien_dofus",mData.get(viewHolder.getAdapterPosition()).getLien_dofus());
+                i.putExtra("p_lien_dofus_retro",mData.get(viewHolder.getAdapterPosition()).getLien_dofus_retro());
+
 
                 mContext.startActivity(i);
 
