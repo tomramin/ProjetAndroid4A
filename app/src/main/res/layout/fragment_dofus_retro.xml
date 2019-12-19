@@ -232,14 +232,65 @@
                 </RelativeLayout>
 
                 <TextView
-                    android:id="@+id/p_sorts"
+                    android:id="@+id/p_sort1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="35dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="55dp"
                     android:paddingLeft="5dp"
-                    android:text="Sorts"
-                    android:textColor="@color/blanc" />
+                    android:text="Sort1"
+                    android:textColor="@color/blanc"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/p_image_sort1"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/p_sort1"
+                    android:background="@drawable/bgg"/>
+
+                <TextView
+                    android:id="@+id/p_sort2"
+                    android:paddingLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="125dp"
+                    android:text="Sort2"
+                    android:textColor="@color/blanc"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/p_image_sort2"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/p_sort2"
+                    android:background="@drawable/bgg"/>
+
+                <TextView
+                    android:id="@+id/p_sort3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Sort3"
+                    android:textColor="@color/blanc"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/p_image_sort3"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/p_sort3"
+                    android:background="@drawable/bgg"
+                    android:layout_marginBottom="10dp"/>
             </RelativeLayout>
 
 

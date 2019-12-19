@@ -5,7 +5,12 @@ public class Personnage {
     private String classe;
     private String name;
     private String gender;
-    private String sorts;
+    private String sort1;
+    private String sort2;
+    private String sort3;
+    private String image_sort1;
+    private String image_sort2;
+    private String image_sort3;
     private String description_wakfu;
     private String description_dofus;
     private String description_dofus_retro;
@@ -21,12 +26,17 @@ public class Personnage {
     public Personnage() {
     }
 
-    public Personnage(String id, String classe, String name, String gender, String sorts, String description_wakfu, String description_dofus, String description_dofus_retro, String icone, String image, String image_wakfu, String image_dofus, String image_dofus_retro, String lien_wakfu, String lien_dofus, String lien_dofus_retro) {
+    public Personnage(String id, String classe, String name, String gender, String sort1, String sort2, String sort3, String image_sort1, String image_sort2, String image_sort3, String description_wakfu, String description_dofus, String description_dofus_retro, String icone, String image, String image_wakfu, String image_dofus, String image_dofus_retro, String lien_wakfu, String lien_dofus, String lien_dofus_retro) {
         this.id = id;
         this.classe = classe;
         this.name = name;
         this.gender = gender;
-        this.sorts = sorts;
+        this.sort1 = sort1;
+        this.sort2 = sort2;
+        this.sort3 = sort3;
+        this.image_sort1 = image_sort1;
+        this.image_sort2 = image_sort2;
+        this.image_sort3 = image_sort3;
         this.description_wakfu = description_wakfu;
         this.description_dofus = description_dofus;
         this.description_dofus_retro = description_dofus_retro;
@@ -72,12 +82,52 @@ public class Personnage {
         this.gender = gender;
     }
 
-    public String getSorts() {
-        return sorts;
+    public String getSort1() {
+        return sort1;
     }
 
-    public void setSorts(String sorts) {
-        this.sorts = sorts;
+    public void setSort1(String sort1) {
+        this.sort1 = sort1;
+    }
+
+    public String getSort2() {
+        return sort2;
+    }
+
+    public void setSort2(String sort2) {
+        this.sort2 = sort2;
+    }
+
+    public String getSort3() {
+        return sort3;
+    }
+
+    public void setSort3(String sort3) {
+        this.sort3 = sort3;
+    }
+
+    public String getImage_sort1() {
+        return image_sort1;
+    }
+
+    public void setImage_sort1(String image_sort1) {
+        this.image_sort1 = image_sort1;
+    }
+
+    public String getImage_sort2() {
+        return image_sort2;
+    }
+
+    public void setImage_sort2(String image_sort2) {
+        this.image_sort2 = image_sort2;
+    }
+
+    public String getImage_sort3() {
+        return image_sort3;
+    }
+
+    public void setImage_sort3(String image_sort3) {
+        this.image_sort3 = image_sort3;
     }
 
     public String getDescription_wakfu() {

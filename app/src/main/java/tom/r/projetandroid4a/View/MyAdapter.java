@@ -65,7 +65,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> impl
                 i.putExtra("p_classe",mData.get(viewHolder.getAdapterPosition()).getClasse());
                 i.putExtra("p_gender",mData.get(viewHolder.getAdapterPosition()).getGender());
                 i.putExtra("p_icone",mData.get(viewHolder.getAdapterPosition()).getIcone());
-                i.putExtra("p_sorts",mData.get(viewHolder.getAdapterPosition()).getSorts());
+                i.putExtra("p_sort1",mData.get(viewHolder.getAdapterPosition()).getSort1());
+                i.putExtra("p_sort2",mData.get(viewHolder.getAdapterPosition()).getSort2());
+                i.putExtra("p_sort3",mData.get(viewHolder.getAdapterPosition()).getSort3());
+                i.putExtra("p_image_sort1",mData.get(viewHolder.getAdapterPosition()).getImage_sort1());
+                i.putExtra("p_image_sort2",mData.get(viewHolder.getAdapterPosition()).getImage_sort2());
+                i.putExtra("p_image_sort3",mData.get(viewHolder.getAdapterPosition()).getImage_sort3());
                 i.putExtra("p_image_wakfu",mData.get(viewHolder.getAdapterPosition()).getImage_wakfu());
                 i.putExtra("p_image_dofus",mData.get(viewHolder.getAdapterPosition()).getImage_dofus());
                 i.putExtra("p_image_dofus_retro",mData.get(viewHolder.getAdapterPosition()).getImage_dofus_retro());

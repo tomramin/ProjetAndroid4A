@@ -68,7 +68,12 @@ public class MainActivity extends AppCompatActivity {
                         personnage.setClasse(jsonObject.getString("classe"));
                         personnage.setName(jsonObject.getString("name"));
                         personnage.setGender(jsonObject.getString("gender"));
-                        personnage.setSorts(jsonObject.getString("sort"));
+                        personnage.setSort1(jsonObject.getString("sort1"));
+                        personnage.setSort2(jsonObject.getString("sort2"));
+                        personnage.setSort3(jsonObject.getString("sort3"));
+                        personnage.setImage_sort1(jsonObject.getString("image_sort1"));
+                        personnage.setImage_sort2(jsonObject.getString("image_sort2"));
+                        personnage.setImage_sort3(jsonObject.getString("image_sort3"));
                         personnage.setDescription_wakfu(jsonObject.getString("description_wakfu"));
                         personnage.setDescription_dofus(jsonObject.getString("description_dofus"));
                         personnage.setDescription_dofus_retro(jsonObject.getString("description_dofus_retro"));
