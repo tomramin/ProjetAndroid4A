@@ -28,16 +28,11 @@ public class DetailActivity extends AppCompatActivity {
 
         tableLayout.setTabTextColors(getResources().getColor(R.color.blanc),getResources().getColor(R.color.doré));
 
-        fragmentAdapter.AddFragments(new FragmentDofus(), "Dofus");
         fragmentAdapter.AddFragments(new FragmentWakfu(), "Wakfu");
+        fragmentAdapter.AddFragments(new FragmentDofus(), "Dofus");
         fragmentAdapter.AddFragments(new FragmentDofusRetro(), "Dofus Retro");
 
         viewPager.setAdapter(fragmentAdapter);
         tableLayout.setupWithViewPager(viewPager);
-
-        /*tablayout.getTabAt(0).setIcon(R.drawable.ic_group);
-        tablayout.getTabAt(1).setIcon(R.drawable.ic_equipment);
-        tablayout.getTabAt(2).setIcon(R.drawable.ic_arme);*/
-
     }
 }

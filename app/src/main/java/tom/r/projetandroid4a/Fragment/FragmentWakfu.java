@@ -37,6 +37,7 @@ public class FragmentWakfu extends Fragment{
         String icone = getActivity().getIntent().getExtras().getString("p_icone");
         String sorts = getActivity().getIntent().getExtras().getString("p_sorts");
         String image_wakfu = getActivity().getIntent().getExtras().getString("p_image_wakfu");
+        String lien_wakfu = getActivity().getIntent().getExtras().getString("p_lien_wakfu");
 
         // ini views
 
@@ -50,7 +51,7 @@ public class FragmentWakfu extends Fragment{
         TextView pGender = view.findViewById(R.id.p_gender);
         TextView pSorts = view.findViewById(R.id.p_sorts);
         ImageView pImage = view.findViewById(R.id.p_image_wakfu);
-
+        TextView pLien = view.findViewById(R.id.p_lien_wakfu);
 
         // setting values to each view
         pName.setText(name);
@@ -59,6 +60,7 @@ public class FragmentWakfu extends Fragment{
         pDescription.setText(description);
         pGender.setText(gender);
         pSorts.setText(sorts);
+        pLien.setText(lien_wakfu);
 
         RequestOptions requestOptions = new RequestOptions().centerCrop().placeholder(R.drawable.loading_shape).error(R.drawable.loading_shape);
 

@@ -75,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
                         personnage.setImage_wakfu(jsonObject.getString("image_wakfu"));
                         personnage.setImage_dofus(jsonObject.getString("image_dofus"));
                         personnage.setImage_dofus_retro(jsonObject.getString("image_dofus_retro"));
+                        personnage.setLien_dofus(jsonObject.getString("lien_dofus"));
+                        personnage.setLien_dofus_retro(jsonObject.getString("lien_dofus_retro"));
+                        personnage.setLien_wakfu(jsonObject.getString("lien_wakfu"));
                         listePersonnages.add(personnage);
                     } catch (JSONException e) {
                         e.printStackTrace();

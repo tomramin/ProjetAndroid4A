@@ -37,6 +37,7 @@ public class FragmentDofus extends Fragment {
         String icone = getActivity().getIntent().getExtras().getString("p_icone");
         String sorts = getActivity().getIntent().getExtras().getString("p_sorts");
         String image_dofus = getActivity().getIntent().getExtras().getString("p_image_dofus");
+        String lien_dofus = getActivity().getIntent().getExtras().getString("p_lien_dofus");
 
         //Collapsing bar
         CollapsingToolbarLayout collapsingToolbarLayout = view.findViewById(R.id.collapsingtoolbar_id);
@@ -49,6 +50,7 @@ public class FragmentDofus extends Fragment {
         TextView pGender = view.findViewById(R.id.p_gender);
         TextView pSorts = view.findViewById(R.id.p_sorts);
         ImageView pImage = view.findViewById(R.id.p_image_dofus);
+        TextView pLien = view.findViewById(R.id.p_lien_dofus);
 
 
         // Setting values to each view
@@ -58,6 +60,7 @@ public class FragmentDofus extends Fragment {
         pDescription.setText(description);
         pGender.setText(gender);
         pSorts.setText(sorts);
+        pLien.setText(lien_dofus);
 
         RequestOptions requestOptions = new RequestOptions().centerCrop().placeholder(R.drawable.loading_shape).error(R.drawable.loading_shape);
 

@@ -128,8 +128,8 @@
                     android:id="@+id/p_classe"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="-5dp"
                     android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-5dp"
                     android:layout_marginBottom="10dp"
                     android:layout_toRightOf="@+id/classe"
                     android:paddingTop="55dp"
@@ -144,13 +144,12 @@
                     android:layout_centerVertical="true"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="10dp"
                     android:paddingTop="85dp"
                     android:text="Nom:"
                     android:textColor="@color/blanc"
                     android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="10dp"/>
-
+                    android:textStyle="bold" />
 
 
                 <TextView
@@ -272,6 +271,46 @@
                     android:textSize="25dp" />
             </RelativeLayout>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@color/grisFoncé">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/vert">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Link:"
+                        android:textColor="@color/blanc"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/p_lien_dofus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:autoLink="all"
+                    android:clickable="true"
+                    android:paddingTop="40dp"
+                    android:text="Lien"
+                    android:textColor="@color/blanc"
+                    android:textSize="25dp" />
+            </RelativeLayout>
 
         </LinearLayout>
 
