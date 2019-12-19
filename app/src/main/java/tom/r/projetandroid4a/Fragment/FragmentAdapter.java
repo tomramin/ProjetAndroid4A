@@ -8,6 +8,9 @@ import android.support.v4.app.FragmentPagerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Tom
+ */
 public class FragmentAdapter extends FragmentPagerAdapter {
     private final List<Fragment> listeFragments = new ArrayList<>();
     private final List<String> listeTitre = new ArrayList<>();

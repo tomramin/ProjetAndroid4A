@@ -28,9 +28,12 @@ import tom.r.projetandroid4a.Model.Personnage;
 import tom.r.projetandroid4a.R;
 import tom.r.projetandroid4a.View.MyAdapter;
 
-
+/**
+ * @author Tom
+ */
 public class MainActivity extends AppCompatActivity {
 
+    //url de mon API
     private final String JSON_URL = "https://raw.githubusercontent.com/tomramin/API_2/master/dofus.json" ;
     private JsonArrayRequest request ;
     private RequestQueue requestQueue ;
@@ -46,19 +49,21 @@ public class MainActivity extends AppCompatActivity {
 
         listePersonnages = new ArrayList<>() ;
         recyclerView = findViewById(R.id.recyclerviewid);
-        jsonrequest();
+        jsonRequest();
 
+        //ma toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
 
-    private void jsonrequest() {
+    //remplir la liste de personnages en ajoutant des personnages avec les données de l'API
+    private void jsonRequest() {
 
         request = new JsonArrayRequest(JSON_URL, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
 
-                JSONObject jsonObject  = null ;
+                JSONObject jsonObject;
 
                 for (int i = 0 ; i < response.length(); i++ ) {
                     try {
@@ -90,36 +95,32 @@ public class MainActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 }
-
-                setuprecyclerview(listePersonnages);
-
+                setupRecyclerView(listePersonnages);
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-
             }
         });
-
         requestQueue = Volley.newRequestQueue(MainActivity.this);
         requestQueue.add(request) ;
-
     }
 
-    private void setuprecyclerview(List<Personnage> lstpersonnage) {
+    // recyclerView
+    private void setupRecyclerView(List<Personnage> listePersonnages) {
 
-        myAdapter = new MyAdapter(this,lstpersonnage) ;
+        myAdapter = new MyAdapter(this,listePersonnages) ;
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(myAdapter);
-
     }
 
+    // rechercher un personnage en cliquant sur la loupe
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.personnage_menu, menu);
-        MenuItem searchPerso = menu.findItem(R.id.action_search);
-        SearchView searchView = (SearchView) searchPerso.getActionView();
+        MenuItem searchPersonnage = menu.findItem(R.id.action_search);
+        SearchView searchView = (SearchView) searchPersonnage.getActionView();
         searchView.setImeOptions(EditorInfo.IME_ACTION_DONE);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override

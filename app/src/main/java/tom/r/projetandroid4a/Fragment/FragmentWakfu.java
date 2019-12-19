@@ -16,6 +16,9 @@ import com.bumptech.glide.request.RequestOptions;
 
 import tom.r.projetandroid4a.R;
 
+/**
+ * @author Tom
+ */
 public class FragmentWakfu extends Fragment{
     public View view;
 
@@ -27,7 +30,7 @@ public class FragmentWakfu extends Fragment{
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view=inflater.inflate(R.layout.fragment_wakfu, container, false);
 
-        // Recieve data
+        // Reception des données
         String id = getActivity().getIntent().getExtras().getString("p_id");
         String name = getActivity().getIntent().getExtras().getString("p_name");
         String description_wakfu = getActivity().getIntent().getExtras().getString("p_description_wakfu");
@@ -44,11 +47,11 @@ public class FragmentWakfu extends Fragment{
         String image_wakfu = getActivity().getIntent().getExtras().getString("p_image_wakfu");
         String lien_wakfu = getActivity().getIntent().getExtras().getString("p_lien_wakfu");
 
-        // ini views
-
+        // CollapsingToolbar
         CollapsingToolbarLayout collapsingToolbarLayout = view.findViewById(R.id.collapsingtoolbar_id);
         collapsingToolbarLayout.setTitleEnabled(true);
 
+        // associe chaque view avec son id du xml
         TextView pId = view.findViewById(R.id.p_id);
         TextView pName = view.findViewById(R.id.p_name);
         TextView pClasse = view.findViewById(R.id.p_classe);
@@ -64,7 +67,7 @@ public class FragmentWakfu extends Fragment{
         TextView pLien = view.findViewById(R.id.p_lien_wakfu);
         ImageView pIcone = view.findViewById(R.id.p_icone);
 
-        // setting values to each view
+        // setting des valeurs de chaque view
         pName.setText(name);
         pId.setText(id);
         pClasse.setText(classe);
@@ -75,10 +78,11 @@ public class FragmentWakfu extends Fragment{
         pSort3.setText(sort3);
         pLien.setText(lien_wakfu);
 
+        // requêtes option pour les images avec Glide en fonction du fond de l'ImageView
         RequestOptions requestOptions = new RequestOptions().centerCrop().placeholder(R.drawable.loading_shape).error(R.drawable.loading_shape);
         RequestOptions requestOptions2 = new RequestOptions().centerCrop().placeholder(R.drawable.bgg).error(R.drawable.bgg);
 
-        // set image using Glide
+        // chargement des images avec Glide
         Glide.with(this).load(image_wakfu).apply(requestOptions).into(pImage);
         Glide.with(this).load(icone).apply(requestOptions2).into(pIcone);
         Glide.with(this).load(image_sort1).apply(requestOptions2).into(pImageSort1);
