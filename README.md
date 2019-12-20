@@ -10,7 +10,7 @@ vous aurez accès à la description d'un personnage de cette classe à chaque é
 
 ## 2) Fonctionnalités
 
-- Deux activités
+- Deux activité (MainActivity et DetailActivity contenant les fragments)
 - Trois Fragments
 - RecyclerView
 - Barre de recherche par classe
