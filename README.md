@@ -34,8 +34,10 @@ vous aurez accès à la description d'un personnage de cette classe à chaque é
 
 ## 4) Screenshots
 ### Accueil
+RecyclerView affichant les liste des classes
 <img src="img/accueil.jpg" width="300" height="600"><br>
 #### Search
+Icône de recherche permettant de filtrer la liste initiale par classe en fonction des lettres entrées
 <img src="img/search.jpg" width="300" height="600">  <img src="img/filtered.jpg" width="300" height="600"> <br><br>
 ### Fragments
 Changer de fragment en cliquant sur leur nom ou en swipant de droite à gauche et inversement
