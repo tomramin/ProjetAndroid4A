@@ -38,6 +38,7 @@ vous aurez accès à la description d'un personnage de cette classe à chaque é
 #### Search
 <img src="img/search.jpg" width="300" height="600">  <img src="img/filtered.jpg" width="300" height="600"> <br><br>
 ### Fragments
+Changer de fragment en cliquant sur leur nom ou en swipant de droite à gauche et inversement
 #### 1) Wakfu
 <img src="img/iop_wakfu.jpg" width="300" height="600">  <img src="img/iop_wakfu2.jpg" width="300" height="600"> <br><br>
 <img src="img/sram.jpg" width="300" height="600">  <img src="img/sram2.jpg" width="300" height="600"> <br><br>
