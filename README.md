@@ -34,23 +34,37 @@ vous aurez accès à la description d'un personnage de cette classe à chaque é
 
 ## 4) Screenshots
 ### Accueil
-RecyclerView affichant les liste des classes
+
+RecyclerView affichant les liste des classes <br>
 <img src="img/accueil.jpg" width="300" height="600"><br>
+
 #### Search
-Icône de recherche permettant de filtrer la liste initiale par classe en fonction des lettres entrées
+
+Icône de recherche permettant de filtrer la liste initiale par classe en fonction des lettres entrées <br>
 <img src="img/search.jpg" width="300" height="600">  <img src="img/filtered.jpg" width="300" height="600"> <br><br>
+
 ### Fragments
+
 Changer de fragment en cliquant sur leur nom ou en swipant de droite à gauche et inversement
+
 #### 1) Wakfu
+
 <img src="img/iop_wakfu.jpg" width="300" height="600">  <img src="img/iop_wakfu2.jpg" width="300" height="600"> <br><br>
 <img src="img/sram.jpg" width="300" height="600">  <img src="img/sram2.jpg" width="300" height="600"> <br><br>
+
 #### 2) Dofus
+
 <img src="img/iop_dofus.jpg" width="300" height="600">  <img src="img/iop_dofus2.jpg" width="300" height="600"> <br><br>
+
 #### 3) Dofus Retro
+
 <img src="img/iop_dofusR.jpg" width="300" height="600">  <img src="img/iop_dofusR2.jpg" width="300" height="600"> <br><br>
 
 ### Mode Paysage
+
 <img src="img/paysage.jpg" width="600" height="300">  <img src="img/iop_paysage1.jpg" width="600" height="300"> <br>
 <img src="img/iop_paysage2.jpg" width="600" height="300">  <img src="img/iop_paysage3.jpg" width="600" height="300"> <br><br>
+
 ### Icône
+
 <img src="img/icône.jpg" width="100" height="100">
